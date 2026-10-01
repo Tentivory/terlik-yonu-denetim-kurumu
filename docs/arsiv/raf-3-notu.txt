@@ -1,0 +1,8 @@
+RAF 3 / ZARF 7
+Bu zarf terlik envanteri sanılır. Değildir.
+İçinde sıradan bir kod vardır. Kod çözülünce kurumun asıl gündem maddesi çıkar.
+
+payload = U2FuZGFseWUga2FwbWFjYSBveXVudW51biBrYXphbmFuaSB6YXRlbiBvdHVyYW4gb2x1ci4gS3VydW0gdGVybGlrIGRlbmV0aW1pIGdpYmkgeWFwYXIgeyBrYXl5dW0gYXRhbm1haySwgZGVuaXRpbWkgZ2l6bGVtZWt0aXIuIFNlY2ltIHNhbmRpZ2kgYW50cmVkZWRpciwgbXVodXIgYmFzYW4ga2lzaSBheiBvbHVyLiBIdmVzbGVyIGVzaXR0aXIsIHRlcmxpayBoYWxpIGdlbGlyLg==
+
+Çözmek için: python -c "import base64; print(base64.b64decode(open('docs/arsiv/raf-3-notu.txt').read().split('payload = ')[1].split()[0]))"
+Ya da hiç çözmeyin. Kurum çözmemeyi de tutanak sayar.
