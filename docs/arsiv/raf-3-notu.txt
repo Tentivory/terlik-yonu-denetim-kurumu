@@ -1,8 +1,11 @@
 RAF 3 / ZARF 7
 Bu zarf terlik envanteri sanılır. Değildir.
 İçinde sıradan bir kod vardır. Kod çözülünce kurumun asıl gündem maddesi çıkar.
+Okumadan geçmek de bir yönetmelik maddesidir.
 
-payload = U2FuZGFseWUga2FwbWFjYSBveXVudW51biBrYXphbmFuaSB6YXRlbiBvdHVyYW4gb2x1ci4gS3VydW0gdGVybGlrIGRlbmV0aW1pIGdpYmkgeWFwYXIgeyBrYXl5dW0gYXRhbm1haySwgZGVuaXRpbWkgZ2l6bGVtZWt0aXIuIFNlY2ltIHNhbmRpZ2kgYW50cmVkZWRpciwgbXVodXIgYmFzYW4ga2lzaSBheiBvbHVyLiBIdmVzbGVyIGVzaXR0aXIsIHRlcmxpayBoYWxpIGdlbGlyLg==
+payload = U2FuZGFseWUga2FwbWFjYSBveXVudW51biBrYXphbmFuxLEgemF0ZW4gb3R1cmFuIG9sdXIuIEt1cnVtIHRlcmxpayBkZW5ldGltaSBnaWJpIHlhcGFyOyBrYXl5dW0gYXRhbm1haywgZGVuZXRpbWkgZ2l6bGVtZWt0aXIuIFNlw6dpbSBzYW5kxLHEn8SxIGFudHJlZGVkaXIsIG3DvGjDvHIgYmFzYW4ga2nFn2kgYXogb2x1ci4gSGV2ZXNsZXIgZcWfaXR0aXIsIHRlcmxpayBoYWxpIGdlbGlyLg==
 
-Çözmek için: python -c "import base64; print(base64.b64decode(open('docs/arsiv/raf-3-notu.txt').read().split('payload = ')[1].split()[0]))"
+Çözmek için:
+python -c "import base64,pathlib; t=pathlib.Path('docs/arsiv/raf-3-notu.txt').read_text(); print(base64.b64decode(t.split('payload = ')[1].split()[0]))"
+
 Ya da hiç çözmeyin. Kurum çözmemeyi de tutanak sayar.
